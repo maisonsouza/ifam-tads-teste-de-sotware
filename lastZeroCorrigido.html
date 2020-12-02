@@ -1,0 +1,51 @@
+<meta charset="utf-8"/>
+
+<h1>Teste de software</h1>
+<h2>Aluno: Maison Marcel</h2>
+<script>
+
+    var arrayX = [];
+    var y,indice;
+    var achou;
+
+
+    // retorna o índice do último 0 em x.
+    // retorna -1 se o número 0 não ocorre em x
+
+    alert("Digite 3 valores para o array");
+    for(indice=0;indice<3;indice++){
+        arrayX[indice] = prompt("Digite o valor do array na posição "+indice);
+    }
+
+    console.log("Tamanho do Array",arrayX.length);
+    console.log(arrayX)
+    document.writeln("Array digitado: ",arrayX);
+
+    var ultimaPosicao = lastZero(arrayX);
+    document.write("<br>A função foi executada");
+    if(ultimaPosicao == -1){
+        document.write("<br>Elemento 0 não existe no array ");
+    }else{
+        document.write("<br>O zero foi encontrado na posição = ",i+" do array");
+    }
+
+    // retorna o índice do último 0 em x.
+    // retorna -1 se o número 0 não ocorre em x
+    public static int lastZero (int[] x) {
+        for (int i = 0; i < x.length; i++) {
+            if (x[i] == 0) {
+                boolean achou = true;
+                int ultimaPosicao = i;
+                continue;
+            }
+        }
+        if(!achou){
+            return -1;
+        } else {
+            return ultimaPosicao;
+        }
+    }
+
+
+
+</script>

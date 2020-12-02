@@ -1,0 +1,47 @@
+<meta charset="utf-8"/>
+
+<h1>Teste de software</h1>
+<h2>Aluno: Maison Marcel</h2>
+<script>
+
+    var arrayX = [];
+    var y,i;
+    var achou;
+
+
+    // retorna o índice do último elemento em X que é igual a y.
+    // Se o element não existir, retorna -1
+    // Este loop deve finalizar com 0.
+
+    alert("Digite 3 valores para o array");
+    for(var indice=0;indice<3;indice++){
+        arrayX[indice] = prompt("Digite o valor do array na posição "+indice);
+    }
+
+    console.log("Tamanho do Array",arrayX.length);
+    console.log(arrayX)
+    document.writeln("Array digitado: ",arrayX);
+    y = prompt("Digite o valor de Y");
+    document.writeln("<br>Valor de y digitado: ",y);
+
+    findLast(arrayX,y);
+
+    function findLast(arrayX, y) {
+        document.write("<br>Executando findLast");
+        for (i = arrayX.length-1; i >= 0; i--) {
+            document.write("<br>ArrayX["+i+"] = "+arrayX[i],"   arrayX = ",arrayX)
+            if (arrayX[i] == y) {
+                document.write("<br>Resultado : ",i);
+                achou=true;
+                continue;
+            }
+        }
+        if(!achou){
+            document.write("<br>Elemento não existe no array ");
+        }
+        document.write("<br>A função foi executada");
+
+    }
+
+
+</script>
